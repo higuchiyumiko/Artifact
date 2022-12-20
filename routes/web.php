@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController; 
+use App\Http\Controllers\ItemsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,4 +15,13 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', [CategoryController::class, 'index']);   
-Route::get('/reviews/{category}', [CategoryController::class ,'show']);
+Route::post('/', [CategoryController::class, 'index']);  
+Route::get('/post/', [ItemsController::class ,'post']);
+
+Route::get('/posts/post', [ItemsController::class ,'search']);
+Route::get('/posts/create/', [ItemsController::class ,'register']);
+Route::get('/posts/create/{id}/', [ItemsController::class ,'create']);
+Route::post('/posts/', [ItemsController::class, 'store']);
+Route::post('/posts/review',[ItemsController::class,'store2']);
+Route::get('/posts/show', [ItemsController::class ,'show']);
+Route::get('/posts/show/{post}', [ItemsController::class ,'show2']);
