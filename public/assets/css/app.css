@@ -1,0 +1,23 @@
+
+.title {
+   color:white;
+   padding-left: 10px;
+   padding-top: 30px;
+ }
+ .subtitle{
+    color: white;
+    text-align: right;
+    padding-right: 80px;
+ }
+ .title_area {
+    background-color:#D2691E;
+    padding :100px 40px;
+    background-image: url("24829766_m.jpg");
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ .main {
+    text-align: center;
+    color: #8B4513;
+    }

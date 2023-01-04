@@ -2,15 +2,17 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class items extends Model
 {
     use HasFactory;
+    use SoftDeletes;
     protected $fillable = [
         'Name',
-        //'Item_image',
+        'Item_image',
         'Market_name',
         'Allergy',
         //'created_at',

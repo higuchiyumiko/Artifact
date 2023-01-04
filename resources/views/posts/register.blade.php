@@ -8,13 +8,19 @@
     </head>
     <body>
         <h1>商品登録フォーム</h1>
-        <form action="/posts" method="POST">
+        <form action="/posts" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="name">
                 <h2>Item Name</h2>
-                <input type="text" name="item[Name]" placeholder="商品名を記入してください"/>
+                <input type="text" name="item[Name]" placeholder="商品名を記入してください"/><br>
+                <br>
             </div>
             <div class="body">
+             
+                <div class="image">
+                <input type="file" name="image">
+            </div>
+              
                 <p>Allergy</p>
                 <textarea name="item[Allergy]" placeholder="卵やそばなど"></textarea>
                 <p>Market_name</p>
@@ -35,7 +41,7 @@
                 <input class="form-check-input" type="radio" id="radio07" name="item[category_id]" value="7"> 
                 <label class="form-check-label" for="category">その他</label>
             </div><br>
-            <input type="submit" value="store"/>
+            <input type="submit" value="投稿"/>
         </form>
         <br>
         
