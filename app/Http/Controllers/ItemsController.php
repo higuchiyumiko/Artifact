@@ -65,7 +65,7 @@ class ItemsController extends Controller
 }
     public function show(items $items)
     {
-        return view('posts/show')->with(['items' => $items->get()]);
+        return view('posts/show')->with(['items' => $items->getPaginateByLimit()]);
      //'post'はbladeファイルで使う変数。中身は$itemsはid=1のitemsインスタンス。
     }
     public function show2(Request $request,Review $reviews,items $items)

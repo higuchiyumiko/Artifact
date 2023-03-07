@@ -36,6 +36,9 @@
                             }
                  </script>
         </div>
+        <div class='paginate'>
+            {{ $items->links() }}
+        </div>
       
     </body>
 </html>
