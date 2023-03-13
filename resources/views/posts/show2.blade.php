@@ -9,6 +9,7 @@
     <body>
         <h1>レビュー詳細画面</h1>
         <div class='items'>
+<<<<<<< HEAD
             @foreach ($reviews as $reviews)
                     <p class='title'></p>
                     <div class='body'>
@@ -22,6 +23,22 @@
                         <p>{{$reviews->Body}}</p>
                         <p>{{$reviews->Review_score}}</p>
             @endforeach
+=======
+           
+                    @foreach ($items as $item)
+                    @if ($data->item_id==$item->id)
+                    <p class='title'>商品名：{{$item->Name}}</p>
+                    @else
+                    <p></p>
+                    @endif
+                    @endforeach
+                    <div class='body'>
+                        <p>タイトル：{{$data->Title}}</p>
+                        <p>口コミ内容：{{$data->Body}}</p>
+                        <p>★：{{$data->Review_score}}</p>
+                        <!-- 投稿日 2022/12/25 のようにできればいれたい>
+                   
+>>>>>>> dev_basis01
         </div>
       
     </body>
