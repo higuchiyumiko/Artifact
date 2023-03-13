@@ -1,9 +1,8 @@
-    {
+{
     "private": true,
-     "scripts": {
-        "dev": "vite",
-        "build": "vite build", 
-        "heroku-postbuild": "npm run build"
+    "scripts": {
+        "dev": "screw",
+        "build": "vite build"
     },
     "devDependencies": {
         "axios": "^1.1.2",
