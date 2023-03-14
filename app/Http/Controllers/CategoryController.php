@@ -11,6 +11,6 @@ class CategoryController extends Controller
 {
     public function index(Review $review,items $items)
     {
-         return view('posts/index')->with(['review' => $review->getPaginateByLimit()])->with(['items' => $items->get()]);
+         return view('posts/index')->with(['review' => $review->getByLimit()]);
     }
 }
