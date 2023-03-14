@@ -15,7 +15,7 @@ use App\Http\Controllers\ReviewController;
 |
 */
 
-Route::get('/', [ReviewController::class, 'index']);   
+Route::get('/', [CategoryController::class, 'index']);   
 //Route::post('/', [CategoryController::class, 'index']);  
 Route::get('/post/', [ItemsController::class ,'post']);
 
