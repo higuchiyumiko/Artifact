@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>レビュー編集画面</h1>
+        <h1>商品編集画面</h1>
             <div class="content">
                 @foreach ($items as $item)
                     @if ($data->item_id==$item->id)
