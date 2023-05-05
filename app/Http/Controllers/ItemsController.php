@@ -43,9 +43,10 @@ class ItemsController extends Controller
     }
     public function store(Request $request, items $new_item)
 {
+    $input = $request['item'];
     $image_url = Cloudinary::upload($request->file('image')->getRealPath())->getSecurePath();
   //  dd($image_url);
-    $input = $request['item'];
+   
     $input += ['Item_image' => $image_url];
     $new_item->fill($input)->save();
     return redirect('/');
