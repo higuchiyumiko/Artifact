@@ -13,5 +13,4 @@ class CategoryController extends Controller
     {
          return view('posts/index')->with(['review' => $review->getPaginateByLimit()])->with(['items' => $items->get()]);
     }
-   
 }

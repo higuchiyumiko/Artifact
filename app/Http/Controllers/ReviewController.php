@@ -10,8 +10,8 @@ use App\Models\items;
 
 class ReviewController extends Controller
 {
-       public function index(Review $review,items $items)
-    {
-         return view('posts/index')->with(['review' => $review->getPaginateByLimit()])->with(['items' => $items->get()]);
-    }
+    //   public function index(Review $review,items $items)
+    ///{
+      //   return view('posts/index')->with(['review' => $review->getPaginateByLimit()])->with(['items' => $items->get()]);
+    //}
 }

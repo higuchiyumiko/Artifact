@@ -7,13 +7,13 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>商品</h1>
+        <h1>商品一覧</h1>
         <div class='items'>
             @foreach ($items as $item)
                     <p class='title'>{{ $item->id }}</p>
                     <div class='body'>
                         <p>商品名：{{ $item->Name }}</p>
-                        <div>
+                        <div class="image">
                            <img src="{{ $item->Item_image }}" alt="画像が読み込めません。"/>
                         </div>
                         <p>販売会社：{{$item->Market_name}}</p>
