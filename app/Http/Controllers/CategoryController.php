@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Review;
 use App\Models\items;
+use Cloudinary; 
 
 class CategoryController extends Controller
 {

@@ -17,6 +17,9 @@ class Category extends Model
     public function getByLimit(int $limit_count=10){
         return $this->orderBy('updated_at','DESC')->limit($limit_count);
     }
+    public function items(){
+        return $this->hasMany(items::class);
+    }
    // public function getPaginateByLimit(int $limit_count = 10)
 //{
     // updated_atで降順に並べたあと、limitで件数制限をかける
